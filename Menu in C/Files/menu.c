@@ -86,7 +86,7 @@ char inputMenu(TMenu* menu){
 
     char user_input;
 
-    if(!menu->fieldNoe) return;
+    if(!menu->fieldNoe) return 'º';
     do{
         user_input = getch();
     }while(!checkKey(menu->fieldArr, user_input, menu->fieldNoe));
